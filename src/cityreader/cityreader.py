@@ -75,9 +75,7 @@ for c in cities:
 # TODO Get latitude and longitude values from the user
 
 def cityreader_stretch(lat1, lon1, lat2, lon2, cities=[]):
-  # within will hold the cities that fall within the specified region
-  within = []
-  
+  # within will hold the cities that fall within the specified region  
   min_lat, max_lat = sorted((lat1, lat2))
   min_lon, max_lon = sorted((lon1, lon2))
   
@@ -89,4 +87,3 @@ def cityreader_stretch(lat1, lon1, lat2, lon2, cities=[]):
   # the specified coordinates.
 
   return within
-
